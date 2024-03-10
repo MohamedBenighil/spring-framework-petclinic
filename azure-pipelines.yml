@@ -30,7 +30,7 @@ stages:
       vmImage: $(vmImageName)
 
     steps:
-    - script: 'BENIGHIL MOHAMED echo $(JAVA_HOME)'
+    - bash: 'BENIGHIL MOHAMED echo $(JAVA_HOME)'
     - task: Maven@3
       displayName: 'Maven Package'
       inputs:
