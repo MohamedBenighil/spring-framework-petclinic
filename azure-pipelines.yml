@@ -30,11 +30,12 @@ stages:
       vmImage: $(vmImageName)
 
     steps:
+    - script: 'BENIGHIL MOHAMED echo $JAVA_HOME'
     - task: Maven@3
       displayName: 'Maven Package'
       inputs:
         mavenPomFile: 'pom.xml'
-    - script: 'BENIGHIL MOHAMED echo $JAVA_HOME'
+    
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
